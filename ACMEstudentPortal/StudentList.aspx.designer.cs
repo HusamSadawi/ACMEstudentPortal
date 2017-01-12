@@ -31,6 +31,24 @@ namespace ACMEstudentPortal {
         protected global::System.Web.UI.WebControls.GridView studentsGrid;
         
         /// <summary>
+        /// exportPDF control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button exportPDF;
+        
+        /// <summary>
+        /// exportJSON control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button exportJSON;
+        
+        /// <summary>
         /// studentsList control.
         /// </summary>
         /// <remarks>
