@@ -11,7 +11,7 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/"> ACME Students Portal</a>
+                    <a class="navbar-brand" runat="server" href="~/">ACME Students Portal</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -76,27 +76,25 @@
             </div>
         </div>
         <div id="TitleContent" style="text-align: center">
- <a runat="server" href="~/">
- <asp:Image ID="Image1" runat="server"
-ImageUrl="~/Images/logo.png" BorderStyle="None" />
- </a> 
- <br />
- </div>
+            <a runat="server" href="~/">
+                <asp:Image ID="Image1" runat="server"
+                    ImageUrl="~/Images/logo.png" BorderStyle="None" />
+            </a>
+            <br />
+        </div>
 
         <div id="CategoryMenu" style="text-align: center">
- <asp:ListView ID="categoryList"
- ItemType="ACMEstudentPortal.Models.Student"
- runat="server"
- SelectMethod="GetCategories" >
- <ItemTemplate>
- <b style="font-size: large; font-style: normal">
-
-</a>
- </b>
- </ItemTemplate>
- <ItemSeparatorTemplate> | </ItemSeparatorTemplate>
- </asp:ListView>
- </div>
+            <asp:ListView ID="categoryList"
+                ItemType="ACMEstudentPortal.Models.Student"
+                runat="server"
+                SelectMethod="GetCategories">
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal"></a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate>| </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
