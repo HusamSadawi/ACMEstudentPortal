@@ -25,7 +25,7 @@ namespace ACMEstudentPortal.Models
         [Required, StringLength(50), Display(Name = "Name")]
         public string name { get; set; }
 
-        [Required, Display(Name = "Sex")]
+        [Required, Display(Name = "Sex") ]
         public Gender sex { get; set; }
 
         [Required, Display(Name = "Email"), EmailAddress(ErrorMessage = "Email Address is Invalid")]
